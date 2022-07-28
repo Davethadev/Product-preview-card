@@ -1,0 +1,150 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+    width: 480px;
+    display: flex;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+.image-wrapper {
+    height: 360px;
+    width: 50%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    width: 50%;
+    padding: 5px 20px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 52px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+button:active {
+    cursor: pointer;
+}
+
+button img {
+    width: 10%;
+}
+
+.button-wrapper {
+    margin-left: 5px;
+    margin-top: -8px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    color: hsl(158, 36%, 37%);
+}
+
+.header-text {
+    letter-spacing: 4px;
+    font-size: 0.7em;
+    color: hsl(228, 12%, 48%);
+}
+
+.main-header {
+    margin-top: 2.5px;
+}
+
+.main-header, .price {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.text-content {
+    font-size: 0.8em;
+    line-height: 1.5;
+    margin-top: -8px;
+    width: 90%;
+    color: hsl(228, 12%, 48%);
+}
+
+.old-price {
+    font-size: 0.4em;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media(max-width: 760px) {
+    body {
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .card {
+        background-color: antiquewhite;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+
+    .image-wrapper {
+        width: 100%;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+        height: 100%;
+    }
+
+    button {
+        width: 90%;
+    }
+    
+    button img {
+        margin-left: 45px;
+    }
+
+    .price {
+        margin-top: 35px;
+    }
+}
