@@ -127,6 +127,7 @@ button img {
         width: 320px;
         display: flex;
         flex-direction: column;
+        padding-bottom: 12px;
     }
 
     .image-wrapper {
