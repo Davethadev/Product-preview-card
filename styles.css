@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@100&family=Lexend+Deca:wght@100&family=Montserrat:wght@700&family=Red+Hat+Display:wght@300&display=swap');
 
 :root {
     --primary-font: 'Montserrat', sans-serif;
@@ -10,7 +10,7 @@ body {
 }
 
 .card {
-    width: 480px;
+    width: 460px;
     display: flex;
     border-radius: 2%;
     overflow: hidden;
@@ -36,6 +36,8 @@ body {
 }
 
 button {
+    font-family: var(--primary-font);
+    font-size: 0.65em;
     background-color: hsl(158, 36%, 37%);
     border: none;
     color: white;
@@ -44,7 +46,7 @@ button {
     border-radius: 4px;
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
 }
 
 button:active {
@@ -52,7 +54,7 @@ button:active {
 }
 
 button img {
-    width: 10%;
+    width: 12.5%;
 }
 
 .button-wrapper {
@@ -74,31 +76,31 @@ button img {
     font-family: var(--primary-font);
     letter-spacing: 4px;
     font-size: 0.7em;
-    font-weight: 700;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
 }
 
 .main-header {
     font-family: var(--secondary-font);
     margin-top: 2.5px;
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 .main-header, .price {
-    font-weight: bold;
     font-size: 1.8em;
 }
 
 .text-content {
     font-family: var(--primary-font);
-    font-size: 0.8em;
-    font-weight: 700;
+    font-size: 0.7em;
     line-height: 1.5;
     margin-top: -8px;
     width: 90%;
-
+    color: hsl(228, 12%, 48%);
 }
 
 .old-price {
+    font-family: var(--primary-font);
     font-size: 0.4em;
     text-decoration: line-through;
     color: hsl(228, 12%, 48%);
@@ -150,16 +152,27 @@ button img {
         padding-bottom: 25px;
     }
 
+    .header-text {
+        font-size: 0.8em;
+    }    
+
+    .text-content {
+        width: 100%;
+        font-size: 1em;
+    }
+
     button {
         width: 100%;
+        font-size: 0.8em;
     }
     
     button img {
-        margin-left: 45px;
+        width: 10%;
+        padding-left: 35px;
     }
 
     .price {
-        margin-top: 35px;
+        margin-top: 20px;
     }
 
     .attribution {
